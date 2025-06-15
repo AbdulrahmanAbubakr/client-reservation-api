@@ -10,7 +10,7 @@ const createClient = async (req, res) => {
     // creating client logic
     const clientData = req.body;
     const newClient = await Client.create(clientData);
-    console.log(newClient);
+    // console.log(newClient);
 
     //Send email
     await sendClientEmail(clientData);
